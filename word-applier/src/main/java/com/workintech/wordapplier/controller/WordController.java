@@ -28,13 +28,13 @@ public class WordController {
         return word;
     }
 
-    //her şeyi getir
+    //get all
     @GetMapping("/")
     public List<Word> findAll(){
         return wordMap.values().stream().toList();
     }
 
-    //silme
+    //delete
     @DeleteMapping("/{id}")
     public void delete(@PathVariable Long id) {
         wordMap.remove(id);
