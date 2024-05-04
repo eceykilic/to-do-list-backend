@@ -28,7 +28,7 @@ public class WordController {
         return word;
     }
 
-    //get all
+    //get all info
     @GetMapping("/")
     public List<Word> findAll(){
         return wordMap.values().stream().toList();
