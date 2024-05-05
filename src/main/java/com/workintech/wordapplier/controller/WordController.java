@@ -10,7 +10,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/word")
-@CrossOrigin("https://to-do-list-lagg-j0wa2wpl8-eceykilics-projects.vercel.app")
+@CrossOrigin("https://to-do-list-lagg.vercel.app")
 public class WordController {
 
     private Map<Long, Word> wordMap;
